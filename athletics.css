@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'PT Serif';
+}
+body{
+    display: grid;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #4B9CD3 ; 
+    grid-template-rows: 3.5fr 1.9fr 1.9fr 1.9fr 1.9fr 1.9fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+    padding:5px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-bottom:2px solid #13294B; ;
+}
+h2{
+    font-family:'PT Serif';
+    color: #14264C;
+    text-align:center ; 
+    text-decoration:underline;
+}
+.mediaContainer{
+    display: flex; 
+    flex-direction:row ; 
+    align-items:center;
+    justify-content:space-around;
+    padding:10px ; 
+    border-top:2px solid #13294B; ;
+    border-bottom:2px solid #13294B; ; 
+}
+.sport{
+    display: flex; 
+    flex-direction:column ; 
+    align-items:center;
+    justify-content: center;
+    padding:10px ; 
+    border-top:2px solid #13294B; ;
+    border-bottom:2px solid #13294B; ;
+}
+#Basketball{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:white ;
+}
+#basketballContainer{
+    background-color:white ;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#Football{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: #9FD9FF;
+}
+#footballContainer{
+    background-color: #9FD9FF;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#MaleSoccer{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color:white ;
+}
+#maleSoccerContainer{
+    background-color:white ;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#FemaleSoccer{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-color: #9FD9FF;
+}
+#femaleSoccerContainer{
+    background-color: #9FD9FF;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#FieldHockey{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    background-color:white ;
+}
+#fieldHockeyContainer{
+    background-color:white ;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+img{
+    height:auto;
+    width: auto;
+    max-height:200px;
+    max-width:200px;
+    padding:5px;
+    margin:5px ; 
+    background-color:#13294B ;
+    border-color:#13294B; 
+    border-style:solid; 
+    border-width:2px ;  
+}
+iframe{
+    height:175px; 
+    width:225px ; 
+    padding:5px ; 
+    margin:5px ; 
+    background-color:#13294B ; 
+    border-color:#13294B; 
+    border-style:solid ;
+    border-width:2px ; 
+}
+nav h1{ 
+    float:left ; 
+    max-width:200px ;
+    font-size:30px ; 
+    color: white;
+    padding: 10px;
+    font-family: 'PT Serif';
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+nav a{
+    color:white ; 
+}
+.menuItem {
+    position: relative;
+    background-color: #13294B ; 
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.menuItem:hover {
+    background-color: white;
+}
+.menuItem:active{
+    background-color: #9FD9FF;
+}
+
+.menuItem > a {
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+    padding: 1px;
+    color: white;
+}
+
+.menuItem:hover > a{
+    color: #14264C;
+}
+
+p{ 
+    color: #14264C;
+    text-align:center; 
+    font-family:'PT Sans';
+    padding:30px;
+}
+
+ 
+
+
+@media screen and (max-width: 767px) {
+    /* #menu is the original menu */
+
+
+
+    body{
+        grid-template-rows: repeat(11,1fr);
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #Basketball{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-bottom:none;
+    }
+    #basketballContainer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-top:none ; 
+    }
+    #Football{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border-bottom:none ; 
+    }
+    #footballContainer{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        border-top:none ;
+    }
+    #MaleSoccer{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        background-color:white ;
+        border-bottom:none ; 
+    }
+    #maleSoccerContainer{
+        background-color:white ;
+        grid-column: 1/2;
+        grid-row: 7/8;
+        border-top:none ;
+    }
+    #FemaleSoccer{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        border-bottom:none ; 
+    }
+    #femaleSoccerContainer{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        border-top:none ;
+    }
+    #FieldHockey{
+        grid-column: 1/2;
+        grid-row: 10/11;
+        border-bottom:none ; 
+    }
+    #fieldHockeyContainer{
+        grid-column: 1/2;
+        grid-row: 11/12;
+        border-top:none ;
+    }
+}

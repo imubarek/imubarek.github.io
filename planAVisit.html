@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Marie Griner - Plan a visit webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+        <link href="planAVisit.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $("#menu").slicknav({
+                  appendTo: "#mobilemenu"
+              });
+          });
+      </script>
+    </head>
+<body>
+    <nav id="mobilemenu">
+        <h1><i class="fas fa-university"></i> UNC Chapel Hill</h1>
+    </nav>
+    <nav>
+        <h1><i class="fas fa-university"></i> UNC Chapel Hill</h1>
+      
+
+        <ul id="menu" class="menu">
+            <li class="menuItem"> <a href="index.html">Home</a> </li>
+            <li class="menuItem"> <a href="comingSoon.html">Contact Us</a> </li>
+        </ul>
+    </nav>
+
+
+    <div id = "Content2">
+        <div class="card">
+             <figure><img src="images/research.png" alt="Research">
+              <figcaption>Image via UNC Chapel Hill</figcaption>
+             </figure>
+            <div class="container">
+              <h4><b>Research Facilities</b></h4>
+              <p>Come tour UNC's state of the art research faciliites</p>
+            </div>
+          </div> 
+          <div class="card">
+            <figure>
+            <img src="images/studentstore.jpg" alt="The Student Store">
+            <figcaption> Image via Devin Street, Youtube</figcaption>
+          </figure>
+            <div class="container">
+              <h4><b>The Student Store</b></h4>
+              <p>Stop by the student store before you leave to stock up on UNC apparel</p>
+            </div>
+          </div> 
+          <div class="card">
+            <figure>
+            <img src="images/kenan.png" alt="Kenan Stadium">
+            <figcaption>
+              Image via <br>Nicholas Bafia, <br>The Daily Tar Heel
+            </figcaption>
+          </figure>
+            <div class="container">
+              <h4><b>Kenan Stadium</b></h4>
+              <p>Watch a football game at the iconic Kenan Stadium</p>
+            </div>
+          </div> 
+
+    </div>
+
+
+    <main>
+       <h1 class='webpagetitle'>Plan your Visit 
+           </h1>
+           <figure>
+           <img src="images/oldwell.jpg" alt="The Old Well">
+           <figcaption> Image via Hugh M. Morton, UNC-Chapel Hill</figcaption>
+          </figure>
+           <div>
+           <h4>
+               Explore all the University of North Carolina at Chapel Hill has to offer. 
+           </h4>
+        </div>
+
+    </main>
+
+    <footer>
+        <form method="get">
+            Sign up for our mailing list!
+            <div>
+              <label>
+                Email: <br>
+                <input type="email" id="email"/>
+              </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" id='submitbutton'/>
+            </div>
+           </form>
+    </footer>
+
+</body>
+
+</html>
